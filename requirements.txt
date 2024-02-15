@@ -1,0 +1,6 @@
+basedosdados==1.6.11
+google-cloud-bigquery==3.17.2
+google-cloud-bigquery-storage==1.1.0
+google-cloud-core==2.4.1
+google-cloud-storage==1.42.3
+pandas==1.5.3

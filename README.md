@@ -16,3 +16,20 @@ Para este desafio será necessário ter acesso ao Google Cloud Platform (GCP) pa
 Para mais detalhes, verifique o tutorial a seguir: [Como acessar dados no BigQuery](https://docs.dados.rio/tutoriais/como-acessar-dados/#como-criar-uma-conta-na-gcp)
 
 ---
+## Segunda Parte
+1. Clone o repositório utilizando o seguinte código no terminal: 
+   ```
+   git clone https://github.com/gabryellesoares/emd-desafio-junior-data-scientist/
+   ```
+2. Em seguida, navegue até a pasta do repositório e crie um ambiente virtual para instalar as bibliotecas necessárias inserindo o código `python -m venv venv` no terminal
+3. Ative o ambiente utilizando `source venv/bin/activate`
+4. Instale as dependências com `pip install -r requirements.txt`
+5. Para baixar os dados utilizando a biblioteca **basedosdados** será necessário utilizar o ID do projeto criado anteriormente no GCP. Para isso, clique no nome do projeto ou em "Selecionar um projeto" no Console do GCP e copie o **ID** do projeto.
+6. Abra o arquivo `config.json`, que está no repositório clonado, e insira o ID copiado anteriormente como valor da chave do arquivo (entre aspas). O resultado final deve ficar como o exemplo a seguir:
+   ```
+   {
+    "billing_project_id": "id_copiado"
+   }
+   ```
+   Esse ID do projeto será utilizado no notebook `analise_python.ipynb`.
+7. Agora é possível executar todas as células presentes no notebook.
