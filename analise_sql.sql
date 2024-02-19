@@ -53,7 +53,7 @@ WHERE id_bairro IN (
 -- 5. Existe algum chamado aberto nesse dia que não foi associado a um bairro ou subprefeitura na tabela de bairros? Se sim, por que isso acontece?
 -- Sim. O chamado em questão possui o id "18516246", com "tipo "Ônibus" e subtipo "Verificação de ar condicionado inoperante no ônibus", 
 -- que é um chamado que não se encaixaria em algum bairro específico.
--- Como a associação entre as duas tabelas é feita através do campo id_bairro, não é necessário verificar as duas tabelas.
+-- Como a associação entre as duas tabelas é feita através do campo id_bairro, não é necessário verificar as duas tabelas em relação à subprefeitura.
 
 SELECT *
 FROM `datario.administracao_servicos_publicos.chamado_1746`
