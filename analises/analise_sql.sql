@@ -144,5 +144,4 @@ FROM (
   WHERE subtipo = 'Perturbação do sossego'
     AND data_particao BETWEEN DATE('2022-01-01') AND DATE('2023-12-31')
   GROUP BY DATE(data_inicio)
-)
-ORDER BY media_diaria_periodo DESC;
+);
